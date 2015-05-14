@@ -31,14 +31,14 @@ namespace WebApplication1
 
             foreach (ListItem skillage in checklistSkills.Items)
             {
-                /*if (checklistSkills.SelectedItem == unchecked)
+                if (checklistSkills.SelectedItem == unchecked)
                 {
                     Skillslbl.Text = "you have no skills";
                 }
                 else 
                 {
                     Skillslbl.Text = "Skills: " + checklistSkills.Items;
-                }*/
+                }
             }
 
 

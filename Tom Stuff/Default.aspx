@@ -30,18 +30,13 @@
     </p>
     <p>
         
-        <b>
-            <asp:Label ID="lbl4" runat="server" Text="Education level: "></asp:Label>
-        </b>
+        <b><asp:Label ID="lbl4" runat="server" Text="Education level: "></asp:Label></b>
         <asp:RadioButton ID="High_Schoolradiobnt" runat="server" />
         <asp:Label ID="lbl5" runat="server" Text="High School"></asp:Label>
-        
         <asp:RadioButton ID="Collegeradiobnt" runat="server" />
         <asp:Label ID="lbl6" runat="server" Text="College"></asp:Label>
-        
         <asp:RadioButton ID="Graduateradiobnt" runat="server" />
         <asp:Label ID="lbl7" runat="server" Text="Graduate"></asp:Label>
-        
         <asp:RadioButton ID="Otherradiobnt" runat="server" />
         <asp:Label ID="lbl8" runat="server" Text="Other"></asp:Label>
     </p>

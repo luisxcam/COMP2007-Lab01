@@ -57,42 +57,20 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Default.aspx" />
-    <Content Include="Lab01-Acevedo.aspx" />
-    <Content Include="lab1.aspx" />
-    <Content Include="StudentForum.aspx" />
+    <Content Include="Lab1.aspx">
+      <BrowseToURL>~/Lab1.aspx</BrowseToURL>
+    </Content>
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Default.aspx.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
+    <Compile Include="Lab1.aspx.cs">
+      <DependentUpon>Lab1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Lab01-Acevedo.aspx.cs">
-      <DependentUpon>Lab01-Acevedo.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Lab01-Acevedo.aspx.designer.cs">
-      <DependentUpon>Lab01-Acevedo.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="lab1.aspx.cs">
-      <DependentUpon>lab1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="lab1.aspx.designer.cs">
-      <DependentUpon>lab1.aspx</DependentUpon>
+    <Compile Include="Lab1.aspx.designer.cs">
+      <DependentUpon>Lab1.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StudentForum.aspx.cs">
-      <DependentUpon>StudentForum.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="StudentForum.aspx.designer.cs">
-      <DependentUpon>StudentForum.aspx</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="Web.Debug.config">

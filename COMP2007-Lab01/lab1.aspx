@@ -1,98 +1,100 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Lab1.aspx.cs" Inherits="Lesson2.Lab1" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
-</asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Lab1.aspx.cs" Inherits="COMP2007_Lab01.Lab01_Acevedo" %>
+<!-- 
+Name: Luis Acevedo
+ID: 200264686
+Date: 2015-05-14
 
-    <div>
-        <asp:Label ID="lblName" runat="server" Text="Student Name:"></asp:Label>
-        <asp:TextBox ID="txtbxName" runat="server"></asp:TextBox>
-    </div>
+Lab 1 - Exploring ASP.NET Server Controls
 
-    <div>
-        <asp:Label ID="lblPassword" runat="server" Text="Password:"></asp:Label>
-        <asp:TextBox ID="txtbxPassword" runat="server" TextMode="Password"></asp:TextBox>
-    </div>
+For this lab you will build a student profile page using various .NET Server Controls from the Visual Studio toolbox.  You can drag and drop from the toolbox or hand-code the HTML (recommended).
 
-    <div>
-        <asp:Label ID="lblAddress" runat="server" Text="Address:"></asp:Label>
-        <asp:TextBox ID="txtbxAddress" runat="server" TextMode="MultiLine"></asp:TextBox>
-    </div>
+Your application needs:
+- input for student name[x]
+- input for password (characters should be obscured)[x]
+- full address (large block of text)[x]
+- Education level (radio buttons: High School / College / Graduate / Other) - 1 selection only[x]
+- Check if true (Yes, I have a laptop)[x]
+- Skills list (check boxes: HTML / PHP / CSS / C# / Java) - multiple selection[x]
+- Province (dropdown - AB / BC / ON / QC) - 1 selection only[x]
+- Submit button[x]
 
-    <div>
-        <asp:Label ID="lblEducation" runat="server" Text="Education Level:"></asp:Label>
-        <asp:RadioButtonList ID="rbtnEducationList" runat="server">
-            <asp:ListItem>Highschool</asp:ListItem>
-            <asp:ListItem>College</asp:ListItem>
-            <asp:ListItem>Graduate</asp:ListItem>
-            <asp:ListItem>Other</asp:ListItem>
-        </asp:RadioButtonList>
-    </div>
+When the user clicks Submit, the page should:
+- display all the user input on the same page as a confirmation.  You will need 1 label for each input that shows what the user entered in each form field
 
-    <div>
-        <asp:CheckBox ID="cbxHaveLaptop" runat="server" Text="Yes I have a laptop:" 
-            TextAlign="Left"></asp:CheckBox>
-    </div>
+Save your page as lab1.aspx.  To submit it, zip the following files and upload them to Blackboard:
+- lab1.aspx
+- lab1.aspx.cs
+- lab1.ascx.designer.cs
+-->
+<!DOCTYPE html>
 
-    <div>
-         <asp:Label ID="lblSkillsList" runat="server" Text="Skills List:"> </asp:Label>
-         <asp:CheckBox ID="cbxHTML" runat="server" Text="HTML"></asp:CheckBox> 
-         <asp:CheckBox ID="cbxPHP" runat="server" Text="PHP"></asp:CheckBox> 
-         <asp:CheckBox ID="cbxCSS" runat="server" Text="CSS"></asp:CheckBox> 
-         <asp:CheckBox ID="cbxCSharp" runat="server" Text="C#"></asp:CheckBox>
-         <asp:CheckBox ID="cbxJava" runat="server" Text="Java"></asp:CheckBox>
-    </div>
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Register System</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="main">
 
-    <div>
-    <asp:Label ID="lblProvince" runat="server" Text="Province:"></asp:Label>
-    <asp:DropDownList ID="tipPercentDropDownList" runat="server">
-        <asp:ListItem Selected="True">AB</asp:ListItem>
-        <asp:ListItem>BC</asp:ListItem>
-        <asp:ListItem>ON</asp:ListItem>
-        <asp:ListItem>QC</asp:ListItem>
-    </asp:DropDownList>
-    </div>
+            <div><asp:Label ID="studentNameLabel" runat="server" Text="Label">Student Name:</asp:Label>
+            <asp:TextBox ID="studentNameInput" runat="server"></asp:TextBox></div>
+            
 
-    <div>
-    <asp:Button ID="btnSubmit" runat="server" Text="Submit" onclick="btnSubmit_Click" ></asp:Button>
-    </div>
+            <div><asp:Label ID="passwordLabel" runat="server" Text="Label">Password:</asp:Label>
+            <asp:TextBox ID="passwordInput" type="password" runat="server"></asp:TextBox></div>
+            
 
-    <div>
-        <asp:Label ID="lblInformationSubmitted" runat="server" 
-            Text="Student Information Submitted: " Visible="False"></asp:Label>
-    </div>
-    
-    <div>
-        <asp:Label ID="lblOutputStudentName" runat="server" Text="Student Name: " 
-            Visible="False"></asp:Label>
-    </div>
-    
-    <div>
-        <asp:Label ID="lblOutputPassword" runat="server" Text="Password: " 
-            Visible="False"></asp:Label>
-    </div>
-    
-    <div>
-        <asp:Label ID="lblOutputAddress" runat="server" Text="Address: " 
-            Visible="False"></asp:Label>
-    </div>
+            <div><asp:Label ID="fullAddressLabel" runat="server" Text="Label">Student Address:</asp:Label>
+            <asp:TextBox ID="fullAddressInput" runat="server" Height="240px" Width="240px"></asp:TextBox></div>
+            
 
-    <div>
-        <asp:Label ID="lblOutputEducation" runat="server" Text="Education: " 
-            Visible="False"></asp:Label>
-    </div>
+            <div><asp:Label ID="educationLevelLabel" runat="server" Text="Label">Education Level:</asp:Label>
+            <asp:RadioButtonList ID="educationLevelRadioButtonList" runat="server" AutoPostBack="true" OnSelectedIndexChanged="educationLevelRadioButtonList_SelectedIndexChanged">
+                <asp:ListItem Text="High School"></asp:ListItem>
+                <asp:ListItem Text="College"></asp:ListItem>
+                <asp:ListItem Text="Graduate"></asp:ListItem>
+                <asp:ListItem Text="Other"></asp:ListItem>
+            </asp:RadioButtonList>
+                <asp:TextBox ID="otherInput" runat="server"></asp:TextBox></div>
+            
 
-    <div>
-        <asp:Label ID="lblOutputHaveLaptop" runat="server" Visible="False"></asp:Label>
-    </div>
+            <div><asp:Label ID="laptopLabel" runat="server" Text="Label">Do you have a laptop:</asp:Label>
+            <asp:CheckBox ID="laptopInput" runat="server" Text=""/></div>
+            
 
-    <div>
-        <asp:Label ID="lblOutputSkillsList" runat="server" Text="Skill List: " 
-            Visible="False"></asp:Label>
-    </div>
+            <div><asp:Label ID="skillListLabel" runat="server" Text="Label">Skill List:</asp:Label>
+            <asp:CheckBoxList ID="skillCheckBoxList" runat="server">
+                <asp:ListItem Value="HTM" Text="HTML"></asp:ListItem>
+                <asp:ListItem Value="CSS" Text="CSS"></asp:ListItem>
+                <asp:ListItem Value="CSH" Text="C#"></asp:ListItem>
+                <asp:ListItem Value="JAV" Text="JAVA"></asp:ListItem>
+            </asp:CheckBoxList></div>
+            
 
-    <div>
-        <asp:Label ID="lblOutputProvince" runat="server" Text="Province: " 
-            Visible="False"></asp:Label>
-    </div>
+            <div><asp:Label ID="provinceLabel" runat="server" Text="Label">Province:</asp:Label>
+            <asp:DropDownList ID="provinceDropDownList" runat="server">
+                <asp:ListItem Value="ON" Text="ON"></asp:ListItem>
+                <asp:ListItem Value="BC" Text="BC"></asp:ListItem>
+                <asp:ListItem Value="AB" Text="AB"></asp:ListItem>
+                <asp:ListItem Value="QC" Text="QC"></asp:ListItem>
+            </asp:DropDownList></div>
+            
 
-</asp:Content>
+            <div><asp:Button ID="submitButton" runat="server" Text="Submit" OnClick="submitButton_Click" /></div>
+            
+        </div>
+        <div>
+            <div><asp:Label ID="studentNameOutput" runat="server" Text=""></asp:Label></div>
+            <div><asp:Label ID="passwordOutput" runat="server" Text=""></asp:Label></div>
+            <div><asp:Label ID="fullAddressOutput" runat="server" Text=""></asp:Label></div>
+            <div><asp:Label ID="educationLevelOutput" runat="server" Text=""></asp:Label></div>
+            <div><asp:Label ID="laptopOutput" runat="server" Text=""></asp:Label></div>
+            <div><asp:Label ID="skillLevelOutput" runat="server" Text=""></asp:Label></div>
+            <div><asp:Label ID="provinceOutput" runat="server" Text=""></asp:Label></div>
+            <div><asp:Label ID="TESTLABEL" runat="server" Text=""></asp:Label></div>
+        </div>
+    </form>
+</body>
+</html>

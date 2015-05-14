@@ -7,234 +7,243 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace COMP2007_Lab01 {
+namespace Lesson2 {
     
     
-    public partial class Lab01_Acevedo {
+    public partial class Lab1 {
         
         /// <summary>
-        /// form1 control.
+        /// lblName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.Label lblName;
         
         /// <summary>
-        /// studentNameLabel control.
+        /// txtbxName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label studentNameLabel;
+        protected global::System.Web.UI.WebControls.TextBox txtbxName;
         
         /// <summary>
-        /// studentNameInput control.
+        /// lblPassword control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox studentNameInput;
+        protected global::System.Web.UI.WebControls.Label lblPassword;
         
         /// <summary>
-        /// passwordLabel control.
+        /// txtbxPassword control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label passwordLabel;
+        protected global::System.Web.UI.WebControls.TextBox txtbxPassword;
         
         /// <summary>
-        /// passwordInput control.
+        /// lblAddress control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox passwordInput;
+        protected global::System.Web.UI.WebControls.Label lblAddress;
         
         /// <summary>
-        /// fullAddressLabel control.
+        /// txtbxAddress control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label fullAddressLabel;
+        protected global::System.Web.UI.WebControls.TextBox txtbxAddress;
         
         /// <summary>
-        /// fullAddressInput control.
+        /// lblEducation control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox fullAddressInput;
+        protected global::System.Web.UI.WebControls.Label lblEducation;
         
         /// <summary>
-        /// educationLevelLabel control.
+        /// rbtnEducationList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label educationLevelLabel;
+        protected global::System.Web.UI.WebControls.RadioButtonList rbtnEducationList;
         
         /// <summary>
-        /// educationLevelRadioButtonList control.
+        /// cbxHaveLaptop control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList educationLevelRadioButtonList;
+        protected global::System.Web.UI.WebControls.CheckBox cbxHaveLaptop;
         
         /// <summary>
-        /// otherInput control.
+        /// lblSkillsList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox otherInput;
+        protected global::System.Web.UI.WebControls.Label lblSkillsList;
         
         /// <summary>
-        /// laptopLabel control.
+        /// cbxHTML control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label laptopLabel;
+        protected global::System.Web.UI.WebControls.CheckBox cbxHTML;
         
         /// <summary>
-        /// laptopInput control.
+        /// cbxPHP control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox laptopInput;
+        protected global::System.Web.UI.WebControls.CheckBox cbxPHP;
         
         /// <summary>
-        /// skillListLabel control.
+        /// cbxCSS control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label skillListLabel;
+        protected global::System.Web.UI.WebControls.CheckBox cbxCSS;
         
         /// <summary>
-        /// skillCheckBoxList control.
+        /// cbxCSharp control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBoxList skillCheckBoxList;
+        protected global::System.Web.UI.WebControls.CheckBox cbxCSharp;
         
         /// <summary>
-        /// provinceLabel control.
+        /// cbxJava control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label provinceLabel;
+        protected global::System.Web.UI.WebControls.CheckBox cbxJava;
         
         /// <summary>
-        /// provinceDropDownList control.
+        /// lblProvince control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList provinceDropDownList;
+        protected global::System.Web.UI.WebControls.Label lblProvince;
         
         /// <summary>
-        /// submitButton control.
+        /// tipPercentDropDownList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button submitButton;
+        protected global::System.Web.UI.WebControls.DropDownList tipPercentDropDownList;
         
         /// <summary>
-        /// studentNameOutput control.
+        /// btnSubmit control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label studentNameOutput;
+        protected global::System.Web.UI.WebControls.Button btnSubmit;
         
         /// <summary>
-        /// passwordOutput control.
+        /// lblInformationSubmitted control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label passwordOutput;
+        protected global::System.Web.UI.WebControls.Label lblInformationSubmitted;
         
         /// <summary>
-        /// fullAddressOutput control.
+        /// lblOutputStudentName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label fullAddressOutput;
+        protected global::System.Web.UI.WebControls.Label lblOutputStudentName;
         
         /// <summary>
-        /// educationLevelOutput control.
+        /// lblOutputPassword control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label educationLevelOutput;
+        protected global::System.Web.UI.WebControls.Label lblOutputPassword;
         
         /// <summary>
-        /// laptopOutput control.
+        /// lblOutputAddress control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label laptopOutput;
+        protected global::System.Web.UI.WebControls.Label lblOutputAddress;
         
         /// <summary>
-        /// skillLevelOutput control.
+        /// lblOutputEducation control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label skillLevelOutput;
+        protected global::System.Web.UI.WebControls.Label lblOutputEducation;
         
         /// <summary>
-        /// provinceOutput control.
+        /// lblOutputHaveLaptop control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label provinceOutput;
+        protected global::System.Web.UI.WebControls.Label lblOutputHaveLaptop;
         
         /// <summary>
-        /// TESTLABEL control.
+        /// lblOutputSkillsList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label TESTLABEL;
+        protected global::System.Web.UI.WebControls.Label lblOutputSkillsList;
+        
+        /// <summary>
+        /// lblOutputProvince control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblOutputProvince;
     }
 }
