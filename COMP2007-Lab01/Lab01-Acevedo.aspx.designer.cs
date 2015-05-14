@@ -85,22 +85,76 @@ namespace COMP2007_Lab01 {
         protected global::System.Web.UI.WebControls.Label educationLevelLabel;
         
         /// <summary>
-        /// EducationLevelRadioButtonList control.
+        /// educationLevelRadioButtonList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList EducationLevelRadioButtonList;
+        protected global::System.Web.UI.WebControls.RadioButtonList educationLevelRadioButtonList;
         
         /// <summary>
-        /// LaptopLabel control.
+        /// otherInput control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LaptopLabel;
+        protected global::System.Web.UI.WebControls.TextBox otherInput;
+        
+        /// <summary>
+        /// laptopLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label laptopLabel;
+        
+        /// <summary>
+        /// laptopInput control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox laptopInput;
+        
+        /// <summary>
+        /// skillListLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label skillListLabel;
+        
+        /// <summary>
+        /// skillCheckBoxList control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBoxList skillCheckBoxList;
+        
+        /// <summary>
+        /// provinceLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label provinceLabel;
+        
+        /// <summary>
+        /// provinceDropDownList control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList provinceDropDownList;
         
         /// <summary>
         /// submitButton control.
@@ -119,5 +173,68 @@ namespace COMP2007_Lab01 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label studentNameOutput;
+        
+        /// <summary>
+        /// passwordOutput control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label passwordOutput;
+        
+        /// <summary>
+        /// fullAddressOutput control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label fullAddressOutput;
+        
+        /// <summary>
+        /// educationLevelOutput control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label educationLevelOutput;
+        
+        /// <summary>
+        /// laptopOutput control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label laptopOutput;
+        
+        /// <summary>
+        /// skillLevelOutput control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label skillLevelOutput;
+        
+        /// <summary>
+        /// provinceOutput control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label provinceOutput;
+        
+        /// <summary>
+        /// TESTLABEL control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label TESTLABEL;
     }
 }
