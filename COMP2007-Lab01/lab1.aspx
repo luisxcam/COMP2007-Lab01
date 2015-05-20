@@ -37,19 +37,25 @@ Save your page as lab1.aspx.  To submit it, zip the following files and upload t
     <link href="CSS/main.css" rel="stylesheet" />
 </head>
 <body>
-    <form id="form1" runat="server">
+    
+    <div class="page-header">
+        <h1>Welcome</h1>
+        <h4>Please enter your personal information</h4>
+    </div>
+
+    <form id="form1" runat="server" class="form-group">
         <div id="main">
 
             <div><asp:Label ID="studentNameLabel" runat="server" Text="Label">Student Name:</asp:Label>
-            <asp:TextBox ID="studentNameInput" runat="server"></asp:TextBox></div>
+            <asp:TextBox ID="studentNameInput" runat="server" CssClass="form-control"></asp:TextBox></div>
             
 
             <div><asp:Label ID="passwordLabel" runat="server" Text="Label">Password:</asp:Label>
-            <asp:TextBox ID="passwordInput" type="password" runat="server"></asp:TextBox></div>
+            <asp:TextBox ID="passwordInput" type="password" runat="server" CssClass="form-control"></asp:TextBox></div>
             
 
             <div><asp:Label ID="fullAddressLabel" runat="server" Text="Label">Student Address:</asp:Label>
-            <asp:TextBox ID="fullAddressInput" runat="server" Height="240px" Width="240px"></asp:TextBox></div>
+            <asp:TextBox ID="fullAddressInput" runat="server" Height="240px" Width="240px" CssClass="form-control"></asp:TextBox></div>
             
 
             <div><asp:Label ID="educationLevelLabel" runat="server" Text="Label">Education Level:</asp:Label>
@@ -59,19 +65,19 @@ Save your page as lab1.aspx.  To submit it, zip the following files and upload t
                 <asp:ListItem Text="Graduate"></asp:ListItem>
                 <asp:ListItem Text="Other"></asp:ListItem>
             </asp:RadioButtonList>
-                <asp:TextBox ID="otherInput" runat="server"></asp:TextBox></div>
+            <asp:TextBox ID="otherInput" runat="server" CssClass="form-control"></asp:TextBox></div>
             
 
-            <div><asp:Label ID="laptopLabel" runat="server" Text="Label">Do you have a laptop:</asp:Label>
-            <asp:CheckBox ID="laptopInput" runat="server" Text=""/></div>
+            <div class="input-group"><asp:CheckBox CssClass="input-group-addon" ID="laptopInput" runat="server" Text=""/>
+                <asp:Label ID="laptopLabel" runat="server" Text="Label" CssClass="form-control">I own a laptop</asp:Label></div>
             
 
             <div><asp:Label ID="skillListLabel" runat="server" Text="Label">Skill List:</asp:Label>
             <asp:CheckBoxList ID="skillCheckBoxList" runat="server">
-                <asp:ListItem Value="HTM" Text="HTML"></asp:ListItem>
+                <asp:ListItem Value="HTML" Text="HTML"></asp:ListItem>
                 <asp:ListItem Value="CSS" Text="CSS"></asp:ListItem>
-                <asp:ListItem Value="CSH" Text="C#"></asp:ListItem>
-                <asp:ListItem Value="JAV" Text="JAVA"></asp:ListItem>
+                <asp:ListItem Value="C#" Text="C#"></asp:ListItem>
+                <asp:ListItem Value="JAVA" Text="JAVA"></asp:ListItem>
             </asp:CheckBoxList></div>
             
 

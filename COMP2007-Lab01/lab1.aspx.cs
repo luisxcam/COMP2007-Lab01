@@ -58,7 +58,7 @@ namespace COMP2007_Lab01
             foreach (ListItem item in skillCheckBoxList.Items)
             {
                 if (item.Selected)
-                    skills += item.Text + ", ";
+                    skills += item.Value + ", ";
             }
             
             //Province
