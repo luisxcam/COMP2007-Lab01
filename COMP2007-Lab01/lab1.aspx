@@ -33,6 +33,8 @@ Save your page as lab1.aspx.  To submit it, zip the following files and upload t
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Register System</title>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="CSS/main.css" rel="stylesheet" />
 </head>
 <body>
     <form id="form1" runat="server">
@@ -96,5 +98,7 @@ Save your page as lab1.aspx.  To submit it, zip the following files and upload t
             <div><asp:Label ID="TESTLABEL" runat="server" Text=""></asp:Label></div>
         </div>
     </form>
+    <script src="Scripts/jquery-1.9.1.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
 </body>
 </html>
