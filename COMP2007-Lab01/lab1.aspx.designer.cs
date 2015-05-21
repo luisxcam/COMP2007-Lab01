@@ -22,157 +22,157 @@ namespace COMP2007_Lab01 {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// studentNameLabel control.
+        /// StudentNameLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label studentNameLabel;
+        protected global::System.Web.UI.WebControls.Label StudentNameLabel;
         
         /// <summary>
-        /// studentNameInput control.
+        /// StudentNameTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox studentNameInput;
+        protected global::System.Web.UI.WebControls.TextBox StudentNameTextBox;
         
         /// <summary>
-        /// passwordLabel control.
+        /// PasswordLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label passwordLabel;
+        protected global::System.Web.UI.WebControls.Label PasswordLabel;
         
         /// <summary>
-        /// passwordInput control.
+        /// PasswordTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox passwordInput;
+        protected global::System.Web.UI.WebControls.TextBox PasswordTextBox;
         
         /// <summary>
-        /// fullAddressLabel control.
+        /// AddressLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label fullAddressLabel;
+        protected global::System.Web.UI.WebControls.Label AddressLabel;
         
         /// <summary>
-        /// fullAddressInput control.
+        /// AddressTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox fullAddressInput;
+        protected global::System.Web.UI.WebControls.TextBox AddressTextBox;
         
         /// <summary>
-        /// educationLevelLabel control.
+        /// EducationLevelLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label educationLevelLabel;
+        protected global::System.Web.UI.WebControls.Label EducationLevelLabel;
         
         /// <summary>
-        /// educationLevelRadioButtonList control.
+        /// EducationLevelRadioButtonList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList educationLevelRadioButtonList;
+        protected global::System.Web.UI.WebControls.RadioButtonList EducationLevelRadioButtonList;
         
         /// <summary>
-        /// otherInput control.
+        /// OtherInputTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox otherInput;
+        protected global::System.Web.UI.WebControls.TextBox OtherInputTextBox;
         
         /// <summary>
-        /// laptopLabel control.
+        /// LaptopLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label laptopLabel;
+        protected global::System.Web.UI.WebControls.Label LaptopLabel;
         
         /// <summary>
-        /// laptopInput control.
+        /// LaptopCheckBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox laptopInput;
+        protected global::System.Web.UI.WebControls.CheckBox LaptopCheckBox;
         
         /// <summary>
-        /// skillListLabel control.
+        /// SkillListLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label skillListLabel;
+        protected global::System.Web.UI.WebControls.Label SkillListLabel;
         
         /// <summary>
-        /// skillCheckBoxList control.
+        /// SkillCheckBoxList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBoxList skillCheckBoxList;
+        protected global::System.Web.UI.WebControls.CheckBoxList SkillCheckBoxList;
         
         /// <summary>
-        /// provinceLabel control.
+        /// ProvinceLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label provinceLabel;
+        protected global::System.Web.UI.WebControls.Label ProvinceLabel;
         
         /// <summary>
-        /// provinceDropDownList control.
+        /// ProvinceDropDownList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList provinceDropDownList;
+        protected global::System.Web.UI.WebControls.DropDownList ProvinceDropDownList;
         
         /// <summary>
-        /// submitButton control.
+        /// SubmitButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button submitButton;
+        protected global::System.Web.UI.WebControls.Button SubmitButton;
         
         /// <summary>
-        /// clearFormButton control.
+        /// ClearFormButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button clearFormButton;
+        protected global::System.Web.UI.WebControls.Button ClearFormButton;
         
         /// <summary>
         /// studentNameOutput control.

@@ -48,7 +48,7 @@ Save your page as lab1.aspx.  To submit it, zip the following files and upload t
         <div class="page-header">
             <header>
                 <h1>Welcome</h1>
-               <h4>Please enter your personal information</h4>
+                <h4>Please enter your personal information</h4>
             </header>
         </div>
 
@@ -57,44 +57,44 @@ Save your page as lab1.aspx.  To submit it, zip the following files and upload t
             <form id="form1" runat="server" class="form-group" autocomplete="off">
 
                 <div>
-                    <asp:Label ID="studentNameLabel" runat="server" Text="Label">Student Name:</asp:Label>
-                    <asp:TextBox ID="studentNameInput" runat="server" CssClass="form-control"></asp:TextBox>
+                    <asp:Label ID="StudentNameLabel" runat="server" Text="Label">Student Name:</asp:Label>
+                    <asp:TextBox ID="StudentNameTextBox" placeholder="Enter your name" runat="server" CssClass="form-control"></asp:TextBox>
                 </div>
 
 
                 <div>
-                    <asp:Label ID="passwordLabel" runat="server" Text="Label">Password:</asp:Label>
-                    <asp:TextBox ID="passwordInput" type="password" runat="server" CssClass="form-control"></asp:TextBox>
+                    <asp:Label ID="PasswordLabel" runat="server" Text="Label">Password:</asp:Label>
+                    <asp:TextBox ID="PasswordTextBox" placeholder="Enter your password" runat="server" CssClass="form-control" TextMode="Password"></asp:TextBox>
                 </div>
 
 
                 <div>
-                    <asp:Label ID="fullAddressLabel" runat="server" Text="Label">Student Address:</asp:Label>
-                    <asp:TextBox ID="fullAddressInput" runat="server" CssClass="form-control"></asp:TextBox>
+                    <asp:Label ID="AddressLabel" runat="server" Text="Label">Student Address:</asp:Label>
+                    <asp:TextBox ID="AddressTextBox" placeholder="Enter your address" runat="server" CssClass="form-control"></asp:TextBox>
                 </div>
 
 
                 <div>
-                    <asp:Label ID="educationLevelLabel" runat="server" Text="Label">Education Level:</asp:Label>
-                    <asp:RadioButtonList ID="educationLevelRadioButtonList" runat="server" AutoPostBack="true" OnSelectedIndexChanged="educationLevelRadioButtonList_SelectedIndexChanged">
+                    <asp:Label ID="EducationLevelLabel" runat="server" Text="Label">Education Level:</asp:Label>
+                    <asp:RadioButtonList ID="EducationLevelRadioButtonList" runat="server" AutoPostBack="true" OnSelectedIndexChanged="educationLevelRadioButtonList_SelectedIndexChanged">
                         <asp:ListItem Text="High School"></asp:ListItem>
                         <asp:ListItem Text="College"></asp:ListItem>
                         <asp:ListItem Text="Graduate"></asp:ListItem>
                         <asp:ListItem Text="Other"></asp:ListItem>
                     </asp:RadioButtonList>
-                    <asp:TextBox ID="otherInput" runat="server" CssClass="form-control"></asp:TextBox>
+                    <asp:TextBox ID="OtherInputTextBox" runat="server" CssClass="form-control" placeholder="If Other, please specify"></asp:TextBox>
                 </div>
 
 
                 <div>
-                    <asp:Label ID="laptopLabel" runat="server" Text="Label">Do you own a laptop?</asp:Label>
-                    <asp:CheckBox ID="laptopInput" runat="server" Text="" />
+                    <asp:Label ID="LaptopLabel" runat="server" Text="Label">Do you own a laptop?</asp:Label>
+                    <asp:CheckBox ID="LaptopCheckBox" runat="server" Text="" />
                 </div>
 
 
                 <div>
-                    <asp:Label ID="skillListLabel" runat="server" Text="Label">Skill List:</asp:Label>
-                    <asp:CheckBoxList ID="skillCheckBoxList" runat="server">
+                    <asp:Label ID="SkillListLabel" runat="server" Text="Label">Skill List:</asp:Label>
+                    <asp:CheckBoxList ID="SkillCheckBoxList" runat="server">
                         <asp:ListItem Value="HTML" Text="HTML"></asp:ListItem>
                         <asp:ListItem Value="CSS" Text="CSS"></asp:ListItem>
                         <asp:ListItem Value="C#" Text="C#"></asp:ListItem>
@@ -104,8 +104,8 @@ Save your page as lab1.aspx.  To submit it, zip the following files and upload t
 
 
                 <div>
-                    <asp:Label ID="provinceLabel" runat="server" Text="Label">Province:</asp:Label>
-                    <asp:DropDownList CssClass="form-control" ID="provinceDropDownList" runat="server">
+                    <asp:Label ID="ProvinceLabel" runat="server" Text="Label">Province:</asp:Label>
+                    <asp:DropDownList CssClass="form-control" ID="ProvinceDropDownList" runat="server">
                         <asp:ListItem Value="ON" Text="ON"></asp:ListItem>
                         <asp:ListItem Value="BC" Text="BC"></asp:ListItem>
                         <asp:ListItem Value="AB" Text="AB"></asp:ListItem>
@@ -115,8 +115,8 @@ Save your page as lab1.aspx.  To submit it, zip the following files and upload t
 
 
                 <div>
-                    <asp:Button CssClass="btn btn-primary" ID="submitButton" runat="server" Text="Submit" OnClick="submitButton_Click" />
-                    <asp:Button CssClass="btn btn-warning" ID="clearFormButton" runat="server" Text="Clear" OnClick="clearFormButton_Click" />
+                    <asp:Button CssClass="btn btn-primary" ID="SubmitButton" runat="server" Text="Submit" OnClick="submitButton_Click" />
+                    <asp:Button CssClass="btn btn-warning" ID="ClearFormButton" runat="server" Text="Clear" OnClick="clearFormButton_Click" />
                 </div>
             </form>
 
@@ -131,37 +131,51 @@ Save your page as lab1.aspx.  To submit it, zip the following files and upload t
                     <tr>
                         <th>Student Name:</th>
                         <td>
-                            <asp:Label ID="studentNameOutput" runat="server" Text=""></asp:Label></td>
+                            <asp:Label ID="studentNameOutput" runat="server" Text=""></asp:Label>
+
+                        </td>
                     </tr>
                     <tr>
                         <th>Password:</th>
                         <td>
-                            <asp:Label ID="passwordOutput" runat="server" Text=""></asp:Label></td>
+                            <asp:Label ID="passwordOutput" runat="server" Text=""></asp:Label>
+
+                        </td>
                     </tr>
                     <tr>
                         <th>Address:</th>
                         <td>
-                            <asp:Label ID="fullAddressOutput" runat="server" Text=""></asp:Label></td>
+                            <asp:Label ID="fullAddressOutput" runat="server" Text=""></asp:Label>
+
+                        </td>
                     </tr>
                     <tr>
                         <th>Education Level:</th>
                         <td>
-                            <asp:Label ID="educationLevelOutput" runat="server" Text=""></asp:Label></td>
+                            <asp:Label ID="educationLevelOutput" runat="server" Text=""></asp:Label>
+
+                        </td>
                     </tr>
                     <tr>
                         <th>Laptop:</th>
                         <td>
-                            <asp:Label ID="laptopOutput" runat="server" Text=""></asp:Label></td>
+                            <asp:Label ID="laptopOutput" runat="server" Text=""></asp:Label>
+
+                        </td>
                     </tr>
                     <tr>
                         <th>Skill Level:</th>
                         <td>
-                            <asp:Label ID="skillLevelOutput" runat="server" Text=""></asp:Label></td>
+                            <asp:Label ID="skillLevelOutput" runat="server" Text=""></asp:Label>
+
+                        </td>
                     </tr>
                     <tr>
                         <th>Province:</th>
                         <td>
-                            <asp:Label ID="provinceOutput" runat="server" Text=""></asp:Label></td>
+                            <asp:Label ID="provinceOutput" runat="server" Text=""></asp:Label>
+
+                        </td>
                     </tr>
                 </table>
             </div>

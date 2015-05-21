@@ -11,15 +11,14 @@ namespace COMP2007_Lab01
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //Starting setup
-            otherInput.Enabled = false;
+            
         }
 
         protected void submitButton_Click(object sender, EventArgs e)
         {
             //Variable definition
             String studentName;
-            String password ="";
+            String password = "";
             String fullAddress;
             String educationLevel;
             String laptop;
@@ -28,27 +27,27 @@ namespace COMP2007_Lab01
             
             //  -----INPUTS-----
             //Student name
-            studentName = studentNameInput.Text;
+            studentName = StudentNameTextBox.Text;
             
             //Password
-            for (int x = 0; x < passwordInput.Text.Length; x++)
+            for (int x = 0; x < PasswordTextBox.Text.Length; x++)
             {
                 password += "*";
             }
 
             //Full Address
-            fullAddress = fullAddressInput.Text;
+            fullAddress = AddressTextBox.Text;
             
             //Education Level
-            educationLevel = educationLevelRadioButtonList.SelectedValue;
+            educationLevel = EducationLevelRadioButtonList.SelectedValue;
 
             if (educationLevel == "Other")
             {
-                educationLevel += ": " + otherInput.Text;
+                educationLevel += ": " + OtherInputTextBox.Text;
             }
 
             //Owns a laptop?
-            if (laptopInput.Checked == true)
+            if (LaptopCheckBox.Checked == true)
             {
                 laptop = "Owns a laptop";
             }
@@ -58,7 +57,7 @@ namespace COMP2007_Lab01
             }
 
             //Skills
-            foreach (ListItem item in skillCheckBoxList.Items)
+            foreach (ListItem item in SkillCheckBoxList.Items)
             {
                 if (item.Selected) {
                     if (skills != "")
@@ -71,7 +70,7 @@ namespace COMP2007_Lab01
             }
             
             //Province
-            province = provinceDropDownList.SelectedValue;
+            province = ProvinceDropDownList.SelectedValue;
 
             //Clear the form
             clearForm();
@@ -89,33 +88,33 @@ namespace COMP2007_Lab01
         protected void educationLevelRadioButtonList_SelectedIndexChanged(object sender, EventArgs e)
         {
             //Always disable and clear the input box
-            otherInput.Enabled = false;
-            otherInput.Text = "";
+            OtherInputTextBox.Enabled = false;
+            OtherInputTextBox.Text = "";
 
             //Check if Other was selected
-            if (educationLevelRadioButtonList.SelectedValue == "Other")
+            if (EducationLevelRadioButtonList.SelectedValue == "Other")
             {
-                otherInput.Enabled = true;
+                OtherInputTextBox.Enabled = true;
             }
         }
 
         protected void clearForm()
         {
             //Clear all fields and the result of the Submit
-            studentNameInput.Text = "";
-            passwordInput.Text = "";
-            fullAddressInput.Text = "";
-            educationLevelRadioButtonList.SelectedValue = null;
-            otherInput.Text = "";
-            otherInput.Enabled = false;
-            laptopInput.Checked = false;
+            StudentNameTextBox.Text = "";
+            PasswordTextBox.Text = "";
+            AddressTextBox.Text = "";
+            EducationLevelRadioButtonList.SelectedValue = null;
+            OtherInputTextBox.Text = "";
+            OtherInputTextBox.Enabled = false;
+            LaptopCheckBox.Checked = false;
 
-            foreach (ListItem item in skillCheckBoxList.Items)
+            foreach (ListItem item in SkillCheckBoxList.Items)
             {
                 item.Selected = false;
             }
 
-            provinceDropDownList.SelectedValue = null;
+            ProvinceDropDownList.SelectedValue = null;
 
             //Clear the output
             studentNameOutput.Text = "";
