@@ -19,7 +19,7 @@ namespace COMP2007_Lab01
         {
             //Variable definition
             String studentName;
-            String password;
+            String password ="";
             String fullAddress;
             String educationLevel;
             String laptop;
@@ -31,8 +31,11 @@ namespace COMP2007_Lab01
             studentName = studentNameInput.Text;
             
             //Password
-            password = passwordInput.Text;
-            
+            for (int x = 0; x < passwordInput.Text.Length; x++)
+            {
+                password += "*";
+            }
+
             //Full Address
             fullAddress = fullAddressInput.Text;
             
@@ -57,12 +60,21 @@ namespace COMP2007_Lab01
             //Skills
             foreach (ListItem item in skillCheckBoxList.Items)
             {
-                if (item.Selected)
-                    skills += item.Value + ", ";
+                if (item.Selected) {
+                    if (skills != "")
+                        skills += ", ";
+
+                    //Add the value
+                    skills += item.Value;                
+                }
+
             }
             
             //Province
             province = provinceDropDownList.SelectedValue;
+
+            //Clear the form
+            clearForm();
 
             //  -----OUTPUT-----
             studentNameOutput.Text = studentName;
@@ -80,10 +92,45 @@ namespace COMP2007_Lab01
             otherInput.Enabled = false;
             otherInput.Text = "";
 
+            //Check if Other was selected
             if (educationLevelRadioButtonList.SelectedValue == "Other")
             {
                 otherInput.Enabled = true;
             }
+        }
+
+        protected void clearForm()
+        {
+            //Clear all fields and the result of the Submit
+            studentNameInput.Text = "";
+            passwordInput.Text = "";
+            fullAddressInput.Text = "";
+            educationLevelRadioButtonList.SelectedValue = null;
+            otherInput.Text = "";
+            otherInput.Enabled = false;
+            laptopInput.Checked = false;
+
+            foreach (ListItem item in skillCheckBoxList.Items)
+            {
+                item.Selected = false;
+            }
+
+            provinceDropDownList.SelectedValue = null;
+
+            //Clear the output
+            studentNameOutput.Text = "";
+            passwordOutput.Text = "";
+            fullAddressOutput.Text = "";
+            educationLevelOutput.Text = "";
+            laptopOutput.Text = "";
+            skillLevelOutput.Text = "";
+            provinceOutput.Text = "";
+        }
+
+        //Clears the form when requested by the user
+        protected void clearFormButton_Click(object sender, EventArgs e)
+        {
+            clearForm();
         }
     }
 }

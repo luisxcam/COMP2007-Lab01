@@ -103,15 +103,6 @@ namespace COMP2007_Lab01 {
         protected global::System.Web.UI.WebControls.TextBox otherInput;
         
         /// <summary>
-        /// laptopInput control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox laptopInput;
-        
-        /// <summary>
         /// laptopLabel control.
         /// </summary>
         /// <remarks>
@@ -119,6 +110,15 @@ namespace COMP2007_Lab01 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label laptopLabel;
+        
+        /// <summary>
+        /// laptopInput control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox laptopInput;
         
         /// <summary>
         /// skillListLabel control.
@@ -164,6 +164,15 @@ namespace COMP2007_Lab01 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button submitButton;
+        
+        /// <summary>
+        /// clearFormButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button clearFormButton;
         
         /// <summary>
         /// studentNameOutput control.
