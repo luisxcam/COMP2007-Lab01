@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="lab1.aspx.cs" Inherits="COMP2007_Lab01.Lab01_Acevedo" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="COMP2007_Lab01.Lab01_Acevedo" %>
 
 <!-- 
 Name: Luis Acevedo
