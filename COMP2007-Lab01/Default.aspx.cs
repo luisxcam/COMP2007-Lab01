@@ -11,7 +11,8 @@ namespace COMP2007_Lab01
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+            OtherInputTextBox.Enabled = false;
+            OtherInputTextBox.Text = "";
         }
 
         protected void submitButton_Click(object sender, EventArgs e)
