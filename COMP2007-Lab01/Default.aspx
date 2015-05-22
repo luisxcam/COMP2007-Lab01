@@ -26,6 +26,9 @@ Save your page as lab1.aspx.  To submit it, zip the following files and upload t
 - lab1.aspx
 - lab1.aspx.cs
 - lab1.ascx.designer.cs
+
+    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    NOTE: Couldn't name the assignment files to lab1. If I do this on Azure the page won't load, had to rename the files to default.
 -->
 <!DOCTYPE html>
 
@@ -46,7 +49,7 @@ Save your page as lab1.aspx.  To submit it, zip the following files and upload t
     <div class="container-fluid">
         <div class="col-md-8 col-xs-10 col-md-offset-2 col-xs-offset-1">
             <!-- Header -->
-            <div class="page-header">
+            <div class="jumbotron">
                 <header>
                     <h1>Welcome</h1>
                     <h4>Please enter your personal information</h4>
