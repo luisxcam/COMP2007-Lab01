@@ -51,81 +51,82 @@ Save your page as lab1.aspx.  To submit it, zip the following files and upload t
             <!-- Header -->
             <div class="jumbotron">
                 <header>
-                    <h1 class="jumbotron-text">Welcome</h1>
-                    <h4 class="jumbotron-text">Please enter your personal information</h4>
+                    <h1>Welcome</h1>
+                    <h4>Please enter your personal information</h4>
                 </header>
             </div>
 
             <!-- Form -->
             <div id="main">
-                <form id="form1" runat="server" class="form-group" autocomplete="off">
+                <div id="form-area">
+                    <form id="form1" runat="server" class="form-group" autocomplete="off">
 
-                    <div>
-                        <asp:Label ID="StudentNameLabel" runat="server" Text="Label">Student Name:</asp:Label>
-                        <asp:TextBox ID="StudentNameTextBox" placeholder="Enter your name" runat="server" CssClass="form-control"></asp:TextBox>
-                    </div>
-
-
-                    <div>
-                        <asp:Label ID="PasswordLabel" runat="server" Text="Label">Password:</asp:Label>
-                        <asp:TextBox ID="PasswordTextBox" placeholder="Enter your password" runat="server" CssClass="form-control" TextMode="Password"></asp:TextBox>
-                    </div>
+                        <div>
+                            <asp:Label ID="StudentNameLabel" runat="server" Text="Label">Student Name:</asp:Label>
+                            <asp:TextBox ID="StudentNameTextBox" placeholder="Enter your name" runat="server" CssClass="form-control"></asp:TextBox>
+                        </div>
 
 
-                    <div>
-                        <asp:Label ID="AddressLabel" runat="server" Text="Label">Student Address:</asp:Label>
-                        <asp:TextBox ID="AddressTextBox" placeholder="Enter your address" runat="server" CssClass="form-control"></asp:TextBox>
-                    </div>
+                        <div>
+                            <asp:Label ID="PasswordLabel" runat="server" Text="Label">Password:</asp:Label>
+                            <asp:TextBox ID="PasswordTextBox" placeholder="Enter your password" runat="server" CssClass="form-control" TextMode="Password"></asp:TextBox>
+                        </div>
 
 
-                    <div>
-                        <asp:Label ID="EducationLevelLabel" runat="server" Text="Label">Education Level:</asp:Label>
-                        <asp:RadioButtonList ID="EducationLevelRadioButtonList" runat="server" AutoPostBack="true" OnSelectedIndexChanged="educationLevelRadioButtonList_SelectedIndexChanged">
-                            <asp:ListItem Text="High School"></asp:ListItem>
-                            <asp:ListItem Text="College"></asp:ListItem>
-                            <asp:ListItem Text="Graduate"></asp:ListItem>
-                            <asp:ListItem Text="Other"></asp:ListItem>
-                        </asp:RadioButtonList>
-                        <asp:TextBox ID="OtherInputTextBox" runat="server" CssClass="form-control" placeholder="If Other, please specify"></asp:TextBox>
-                    </div>
+                        <div>
+                            <asp:Label ID="AddressLabel" runat="server" Text="Label">Student Address:</asp:Label>
+                            <asp:TextBox TextMode="MultiLine" Rows="5" Height="100px" ID="AddressTextBox" placeholder="Enter your address" runat="server" CssClass="form-control"></asp:TextBox>
+                        </div>
 
 
-                    <div>
-                        <asp:Label ID="LaptopLabel" runat="server" Text="Label">Do you own a laptop?</asp:Label>
-                        <asp:CheckBox ID="LaptopCheckBox" runat="server" Text="" />
-                    </div>
+                        <div>
+                            <asp:Label ID="EducationLevelLabel" runat="server" Text="Label">Education Level:</asp:Label>
+                            <asp:RadioButtonList ID="EducationLevelRadioButtonList" runat="server" AutoPostBack="true" OnSelectedIndexChanged="educationLevelRadioButtonList_SelectedIndexChanged">
+                                <asp:ListItem Text="High School"></asp:ListItem>
+                                <asp:ListItem Text="College"></asp:ListItem>
+                                <asp:ListItem Text="Graduate"></asp:ListItem>
+                                <asp:ListItem Text="Other"></asp:ListItem>
+                            </asp:RadioButtonList>
+                            <asp:TextBox ID="OtherInputTextBox" runat="server" CssClass="form-control" placeholder="If Other, please specify"></asp:TextBox>
+                        </div>
 
 
-                    <div>
-                        <asp:Label ID="SkillListLabel" runat="server" Text="Label">Skill List:</asp:Label>
-                        <asp:CheckBoxList ID="SkillCheckBoxList" runat="server">
-                            <asp:ListItem Value="HTML" Text="HTML"></asp:ListItem>
-                            <asp:ListItem Value="CSS" Text="CSS"></asp:ListItem>
-                            <asp:ListItem Value="C#" Text="C#"></asp:ListItem>
-                            <asp:ListItem Value="JAVA" Text="JAVA"></asp:ListItem>
-                        </asp:CheckBoxList>
-                    </div>
+                        <div>
+                            <asp:Label ID="LaptopLabel" runat="server" Text="Label">Do you own a laptop?</asp:Label>
+                            <asp:CheckBox ID="LaptopCheckBox" runat="server" Text="" />
+                        </div>
 
 
-                    <div>
-                        <asp:Label ID="ProvinceLabel" runat="server" Text="Label">Province:</asp:Label>
-                        <asp:DropDownList CssClass="form-control" ID="ProvinceDropDownList" runat="server">
-                            <asp:ListItem Value="ON" Text="ON"></asp:ListItem>
-                            <asp:ListItem Value="BC" Text="BC"></asp:ListItem>
-                            <asp:ListItem Value="AB" Text="AB"></asp:ListItem>
-                            <asp:ListItem Value="QC" Text="QC"></asp:ListItem>
-                        </asp:DropDownList>
-                    </div>
+                        <div>
+                            <asp:Label ID="SkillListLabel" runat="server" Text="Label">Skill List:</asp:Label>
+                            <asp:CheckBoxList ID="SkillCheckBoxList" runat="server">
+                                <asp:ListItem Value="HTML" Text="HTML"></asp:ListItem>
+                                <asp:ListItem Value="CSS" Text="CSS"></asp:ListItem>
+                                <asp:ListItem Value="C#" Text="C#"></asp:ListItem>
+                                <asp:ListItem Value="JAVA" Text="JAVA"></asp:ListItem>
+                            </asp:CheckBoxList>
+                        </div>
 
 
-                    <div>
-                        <asp:Button CssClass="btn btn-primary" ID="SubmitButton" runat="server" Text="Submit" OnClick="submitButton_Click" />
-                        <asp:Button CssClass="btn btn-warning" ID="ClearFormButton" runat="server" Text="Clear" OnClick="clearFormButton_Click" />
-                    </div>
-                </form>
+                        <div>
+                            <asp:Label ID="ProvinceLabel" runat="server" Text="Label">Province:</asp:Label>
+                            <asp:DropDownList CssClass="form-control" ID="ProvinceDropDownList" runat="server">
+                                <asp:ListItem Value="ON" Text="ON"></asp:ListItem>
+                                <asp:ListItem Value="BC" Text="BC"></asp:ListItem>
+                                <asp:ListItem Value="AB" Text="AB"></asp:ListItem>
+                                <asp:ListItem Value="QC" Text="QC"></asp:ListItem>
+                            </asp:DropDownList>
+                        </div>
 
+
+                        <div>
+                            <asp:Button CssClass="btn btn-primary" ID="SubmitButton" runat="server" Text="Submit" OnClick="submitButton_Click" />
+                            <asp:Button CssClass="btn btn-warning" ID="ClearFormButton" runat="server" Text="Clear" OnClick="clearFormButton_Click" />
+                        </div>
+                    </form>
+                </div>
                 <!-- Table -->
-                <div>
+                <div id="table-area">
                     <table class="table">
                         <tr>
                             <th>

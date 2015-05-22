@@ -1,4 +1,5 @@
 ﻿body {
+    background: #2086BF;
 }
 
 .jumbotron {
@@ -6,14 +7,19 @@
     border: 1px solid #3C454F;
 }
 
-.jumbotron-text {
-    color: floralwhite;
+    .jumbotron h1, h4 {
+        color: floralwhite;
+    }
+
+#form-area {
+    background-color: floralwhite;
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
+    margin-bottom: 10px;
 }
 
-div{
-    background-color: white;
-}
-
-form{
-    background-color: #2086BF;
+.table {
+    background-color: floralwhite;
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
 }
