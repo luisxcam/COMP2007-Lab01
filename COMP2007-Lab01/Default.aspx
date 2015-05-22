@@ -51,8 +51,8 @@ Save your page as lab1.aspx.  To submit it, zip the following files and upload t
             <!-- Header -->
             <div class="jumbotron">
                 <header>
-                    <h1>Welcome</h1>
-                    <h4>Please enter your personal information</h4>
+                    <h1 class="jumbotron-text">Welcome</h1>
+                    <h4 class="jumbotron-text">Please enter your personal information</h4>
                 </header>
             </div>
 
